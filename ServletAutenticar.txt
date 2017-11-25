@@ -1,0 +1,28 @@
+Tarea del servlet es analizar la aplicacion a los clientes externos, en este caso, el navegador web.
+Para comunicar el servidor con los clientes se utiliza el servlet
+
+NOTA de los Servlet's:
+Cada servlet debe tener 3 nombres:
+	*EL real que es la clase Java
+	*El secundario(le pusimos Servilleta)
+	*El visto por el cliente(/autenticar.php)
+
+Una vez creado el servlet el cliente los accede con las siguientes sintaxis 
+
+url=http://localhost:8090/autenticar.php
+
+Nota http:
+Este protocolo requiere para su uso de alguno de estos metodos
+	*GET=Visualiza informacion solo lectura
+	*POST=Impacta la base de Datos es usado para hacer INSERT. Tambien se usa para AUTENTICAR 
+	*PUT=Se usa para actualizar UPDATE
+	*DELETE=Este es para borrar DELETE
+	*HEAD=Informacion del formato de envio y recepcion de informacion 
+
+	"text/html;charset=UTF-8" son tipos MIME(Son los HEAD de respuesta)	
+
+http://=Protocolo
+localhost:8090=Contexto
+autenticar.php=ruta del servlet
+
+Se debe de crear un cliente, en este caso web para acceder a dicho servlet
