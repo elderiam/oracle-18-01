@@ -1,0 +1,15 @@
+1. Para el proyecto instalacion y configuracion de Servidores
+2. Interuccion de Triggers con campo de tipo date y sysdate
+
+Pasos:
+    a)Seleccionar un servidor de aplicaciones y descargarlo 
+            Caso de uso TOMCAT
+    b)Configurar el puerto del sevidor  <Connector port="8080" protocol="HTTP/1.1" ahi es el puerto correcto
+    c)Configuar los usuarios del servidor
+
+Configuracion en NeatBeans
+	a) services
+		servers click derecho y add server
+			Apache TomCat y le das el nombre que quieras
+				username y password:tomcat
+
