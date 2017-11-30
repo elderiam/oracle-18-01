@@ -26,3 +26,28 @@ localhost:8090=Contexto
 autenticar.php=ruta del servlet
 
 Se debe de crear un cliente, en este caso web para acceder a dicho servlet
+
+	1) Generar una pagina de inicio en html y agregarla al contexto(dominio)
+	2) Crear un formulario web en la pagina index.html para hacer el request(peticion) al servlet y autenticarnos
+	3) Generar el mapeo de la autenticacion con las siguientes reglas:
+		a)si es correcto---> ir a la pagina bienvenido.html
+		b) Si es incorrecto---> ir a una pagina que se llame error.html
+ 
+A esto en Web Develoment se le llama routing for autentication
+	
+	4) Routear la pagina de inicio(index) a la pagina de bienvenido suponiendo una autenticacion positiva.
+				(todavia no estara la autenticacion)
+	5) Pasar los parametros de autenticacion del index.html al ServletAutenticar para que sean sometidos a Oracle:
+			*El login y el password de Oracle
+	
+	6)Modificar el formulario(index) y ServletAutenticar para que oculte los datos de login y password de la barra de direcciones
+	  esto se hace usando en ambos el metodo POST(html) y doPost(ServletAutenticar)
+		
+		NOTA: PUEDES CHECAR LA AUTENTICACION CUANDO ENTRAS Y COPIAS LA URL Y LA PEGAS EN OTRA PAGINA
+
+	7) Verificar que los valores de los parametros sean recibidos correctamente en el Servlet(login y password) para ello usaremos el Log de TomCat
+		En Output en la pestana de My Apache se muestran el login y el password
+
+	8) Enviar el usuario y el password a un modelo que use el patron de diseno DAO(Data Access Object)
+
+		
